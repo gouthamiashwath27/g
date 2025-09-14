@@ -31,7 +31,7 @@
       max-width: 1200px;
       margin: 0 auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 0 20px;
     }
@@ -187,8 +187,8 @@
       flex: 1;
       min-width: 300px;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-end;
+      justify-content: flex-start;
     }
 
     .text-box {
@@ -298,6 +298,10 @@
         grid-row: 3;
       }
 
+      .gallery-text {
+        justify-content: center;
+      }
+
       .text-box {
         margin-top: 0;
         min-height: auto;
@@ -343,6 +347,13 @@
   <!-- Header with Navigation -->
   <header>
     <div class="nav-container">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#order">Order</a></li>
@@ -350,14 +361,8 @@
         <li><a href="#restaurant">Restaurant</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">☰</a></li>
       </ul>
-      
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
     </div>
   </header>
 
@@ -386,7 +391,7 @@
       <div class="gallery-text">
         <div class="text-box">
           <h2>LOREM IPSUM</h2>
-          <h3>LOREM IPSUM<br>SET ADEMIR</h3>
+          <h3>LOREM IPSUM SET ADEMIR</h3>
           <div class="cta-link">
             Click <span class="arrow">➔</span>
           </div>
@@ -395,6 +400,4 @@
     </div>
   </section>
 </body>
-
 </html>
-
